@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Styles/styles.css" rel="stylesheet" />
+    <link href="Styles/diff-screen.css" rel="stylesheet" />
+    <link href="Styles/mobile-styles.css" rel="stylesheet" media="screen and (max-width: 500px), (-webkit-min-device-pixel-ratio: 2)" />
+    <script src="Scripts/modernizr-custom.js"></script>
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <main>
+        <a id="manPage" href="manpages/manFind.html" target="_blank">find Man page</a>
+        <p>
+            Now find is a command line utility that searches one or more directory trees<br>
+            of a file system, it can locate files and I'll be talking about some of the used for it.<br>
+        </p>
+        <code>
+            <mark>find</mark> . -name 'file*' -type f
+        </code>
+        <p>
+            Now this tell the find command to look in the directory it is in as show by<br>
+            the . the -name 'file*' tell it to look for any file that starts with the name of a file, and the -type f just tell it we are only looking for files.
+        </p>
+
+        <p>
+            Now for my favorite used of it is deleting the empty folder.
+        </p>
+        <code>
+            <mark>find</mark> . -type d -empty -delete
+        </code>
+        <p>
+            Now what we are doing here we have the . that show the directory you're in<br>
+            -type d tell the command to only look for folders, and -empty tell it to only<br>
+            look for empty folders, and then the -delete tells it to delete every file it finds.
+        </p>
+
+    </main>
+    
+</body>
+</html>

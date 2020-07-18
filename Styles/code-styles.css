@@ -1,0 +1,43 @@
+table {
+    border: 5px;
+    border-style: solid;
+    border-color: chartreuse;
+}
+
+/*table tr {
+    border: 5px;
+    border-style: solid;
+    border-color: darkred;
+    
+}*/
+table td {
+    border: 5px;
+    border-style: solid;
+    border-color: aqua;
+    background-color: aliceblue;
+}
+
+
+
+table td:first-child {
+    background-color: darkgreen;
+}
+
+dd:nth-of-type(1) {
+    background-color: blue;
+}
+
+dd:last-of-type {
+    
+    background-color: aqua;
+}
+
+ol li:nth-of-type(3) {
+    background-color: crimson;
+}
+
+ol li:nth-last-of-type(2) {
+    background-color: burlywood;
+}
+
+

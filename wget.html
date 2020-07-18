@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<!-- Heroku -->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Styles/styles.css" rel="stylesheet" />
+    <link href="Styles/diff-screen.css" rel="stylesheet" />
+    <link href="Styles/mobile-styles.css" rel="stylesheet" media="screen and (max-width: 500px), (-webkit-min-device-pixel-ratio: 2)" />
+</head>
+<body>
+    <main>
+        <p>
+            Now this is a good one it a powerful download manager,<br>
+            you can download files, you could mirror a whole website<br>
+            if you wanted. Now this command have a lot of used and I will<br>
+            only cover two of the used.
+        </p>
+
+        <code>
+            <mark>wget</mark> www.website.com/filetodl.zip
+        </code>
+        <p>
+            Now what this is doing is the basic download manager for<br>
+            use wget is the command and what come after it is what your<br>
+            telling it to download.
+        </p>
+
+        <p>
+            Now I'm going to talk about the mirror options which I use it for more then often for.
+        </p>
+
+        <code>
+            <mark>wget</mark> -m http://kronos.gtc.edu/~aparys/
+        </code>
+        <p>
+            Now let look at what it doing there the -m option enable and that<br>
+            enable option -N -r -l inf --no-remove-listing now each options<br>
+            have it use -N just make sure if you already have the file it don't re-download it<br>
+            -r is recursive download mode so wget will go to each and every link<br>
+            and download each file in every link and so on until there are no more<br>
+            links to follow. -l inf just tell -r how many links to go down.<br>
+        </p>
+
+
+    </main>
+
+</body>
+</html>

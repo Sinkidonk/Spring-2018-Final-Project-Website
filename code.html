@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Styles/styles.css" rel="stylesheet" />
+    <link href="Styles/diff-screen.css" rel="stylesheet" />
+    <link href="Styles/mobile-styles.css" rel="stylesheet" media="screen and (max-width: 500px), (-webkit-min-device-pixel-ratio: 2)" />
+    <link href="Styles/code-styles.css" rel="stylesheet" />
+    <script src="Scripts/modernizr-custom.js"></script>
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+
+    <script src="Scripts/date.js"></script> <!-- yes I'm using a library i'm trying to do things smart over here-->
+    <script src="Scripts/dateTime.js"></script>
+</head>
+<body>
+    <main>
+
+        <form id="dateTimeForm">
+            <label for="date1">Date 1</label>
+            <input id="date1Info" type="text" /> <!-- required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"-->
+            <label for="date2">Date 2</label>
+            <input id="date2Info" type="text" /><br />
+            <button type="button" id="submit">Calc the date</button>
+        </form>
+        <sup>
+            I am using a Library that pull in the date info from almost whatever you can type in, like today, yesterday, last year, May 2018, May 2017
+        </sup>
+        <p id="totalDays"></p>
+        <p id="totalMonths"></p>
+        <p id="totalYears"></p>
+
+    </main>
+
+</body>
+</html>

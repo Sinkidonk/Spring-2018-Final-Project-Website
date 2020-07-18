@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Styles/styles.css" rel="stylesheet" />
+    <link href="Styles/diff-screen.css" rel="stylesheet" />
+    <link href="Styles/mobile-styles.css" rel="stylesheet" media="screen and (max-width: 500px), (-webkit-min-device-pixel-ratio: 2)" />
+    <script src="Scripts/modernizr-custom.js"></script>
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/formChecking-new.js"></script>
+    
+
+</head>
+<body>
+    <main>
+        <form novalidate method="get" id="contactForm"> <!-- action="form-submit.html" -->
+            <h1>Contact info</h1>
+            <label for="firstname">First Name: </label>
+            <input type="text" name="firstname" id="firstname" placeholder="First Name" />
+            <span id="errorFName">can not be blank, numbers, or special values</span><br> <br>
+
+            <label for="lastname">Last Name: </label>
+            <input type="text" name="lastname" id="lastname" placeholder="Last Name" />
+            <span id="errorLName">can not be blank, numbers, or special values</span><br> <br>
+
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="email" placeholder="E-mail" required />
+            <span id="errorEmail">Must be a valid E-mail format</span><br> <br>
+
+            <label for="phone">Phone Number: </label>
+            <input type="text" name="phone" id="phone" placeholder="Phone Number" />
+            <span id="errorPhone">Must be a valid Phone</span>
+            <br> <br>
+
+            <h3>select your favorite Linux OS:</h3><br>
+            <input type="radio" name="linuxRad" id="ubuntu" value="ubuntu" /><label for="ubuntu">Ubuntu</label>
+            <input type="radio" name="linuxRad" id="debian" value="debian" /><label for="debian">Debian</label>
+            <input type="radio" name="linuxRad" id="fedora" value="fedora" /><label for="fedora">Fedora</label>
+            <input type="radio" name="linuxRad" id="linux" value="linux" /><label for="linux">Linux?</label><br /><br />
+
+            <h3>Select linux you use before:</h3>
+            <input type="checkbox" name="linux" id="ubuntu" value="ubuntu">Ubuntu<br>
+            <input type="checkbox" name="linux" id="debian" value="debian">Debian<br>
+            <input type="checkbox" name="linux" id="fedora" value="fedora">Fedora<br>
+            <input type="checkbox" name="linux" id="centOS" value="centOS">CentOS<br><br>
+
+            <label for="textarea">Add your comments here</label>
+            <textarea id="comment"></textarea><br /><br />
+
+
+
+            <input type="submit" id="btn-submit" value="Submit"> <input type="reset">
+
+
+        </form>
+
+    </main>
+
+</body>
+</html>

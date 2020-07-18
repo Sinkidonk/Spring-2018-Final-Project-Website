@@ -1,0 +1,31 @@
+@media screen and (max-width:957px) { /* , (-webkit-min-device-pixel-ratio: 2)*/
+    header h1 {
+    clear:left;
+    padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 1823px){  /* , (-webkit-min-device-pixel-ratio: 2)*/
+    
+    nav {
+        
+        height: 11em;
+    }
+}
+
+@media screen and (max-width: 1068px){  /* , (-webkit-min-device-pixel-ratio: 2)*/
+    
+    nav {
+        
+        height: 12.5em;
+    }
+}
+
+@media screen and (max-width: 690px){  /* , (-webkit-min-device-pixel-ratio: 2)*/
+    
+    nav {
+        
+        height: 19.688em;
+    }
+}
+

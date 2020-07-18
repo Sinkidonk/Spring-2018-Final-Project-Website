@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home Page</title>
+    <link href="Styles/styles.css" rel="stylesheet" />
+    <link href="Styles/diff-screen.css" rel="stylesheet" />
+    <link href="Styles/mobile-styles.css" rel="stylesheet" media="screen and (max-width: 500px), (-webkit-min-device-pixel-ratio: 2)" />
+    <!-- Favicon icon start -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="Scripts/modernizr-custom.js"></script>
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/openweatherapi.js"></script>
+
+
+
+
+    <!-- Favicon icon end -->
+    <!--[if it IE 9]>
+    <script src="Scripts/html5shiv.js"></script>
+        <![endif]-->
+
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+
+            <div id="calcPlacement">
+                <form id="calc">
+
+                    <label for="CValue">
+                        Enter temp in &#176; C
+                    </label>
+                    <input type="number" id="CValue" />
+                    <button type="button" id="convert">Convert to &#176; F</button><span> Temp in &#176; F</span>
+                    <span id="FValue">&nbsp;</span>
+
+                </form>
+            </div>
+            <!-- I used a click button to avoid making too many request to the Open Weather api
+                They only allow 60 calls per minute, and a max of 7,200 a day(at least I think it per day)-->
+            <div id="weather">
+                
+                <button type="button" id="getWeather">Get Weather Info</button>
+
+            </div>
+            <a href="index.html">
+                <img src="images/tux.svg" onerror="images/tux.png" alt="Tux The Penguins Linux Mascot">
+            </a>
+            <h1 id="titleText">Linux Commands Line Code Home Page</h1>
+
+        </header>
+            <img class="menu" src="images/icon-menu.svg" />
+        <nav>
+
+            <ul>
+                <li><a id="mainNav" href="main.html" target="iframeMain">Home</a></li> <!-- onclick="changeTitle('main')" -->
+                <li><a id="sshNav" href="ssh.html" target="iframeMain">ssh</a></li> <!--  onclick="changeTitle('ssh')" -->
+                <li><a id="ddNav" href="dd.html" target="iframeMain">dd</a></li> <!-- onclick="changeTitle('dd')" -->
+                <li><a id="findNav" href="find.html" target="iframeMain">find</a></li> <!-- onclick="changeTitle('find')" -->
+                <li><a id="rmNav" href="rm.html" target="iframeMain">rm</a></li> <!--  onclick="changeTitle('rm')" -->
+                <li><a id="formNav" href="form.html" target="iframeMain">Forms</a></li> <!-- onclick="changeTitle('form')" -->
+                <li><a id="securityNav" href="web-security.html" target="iframeMain">Web Security</a></li>
+                <li><a id="extraCodeNav" href="code.html" target="iframeMain">Code</a></li>
+
+
+            </ul>
+        </nav>
+
+        <iframe id="iframeMain" name="iframeMain" src="main.html" seamless></iframe>
+
+        <footer><small><i><b>&copy; Alex Parys 2018</b></i></small><a class="rightalign" href="#wrapper">Go to Top</a></footer>
+    </div>
+    <!-- Wrapper -->
+    <script src="Scripts/svgeezy.js"></script>
+    <script src="Scripts/index-code.js"></script>
+</body>
+</html>
